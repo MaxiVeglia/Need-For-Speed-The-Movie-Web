@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url("../images/image/Need_for_Speed.jpg");
+    background-image: url("./images/image/Need_for_Speed.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 150px;

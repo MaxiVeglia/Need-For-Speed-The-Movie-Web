@@ -11,16 +11,16 @@
 <body>
 
 <header class = "header-para-logo">
-    <a href="/index.html">
+    <a href="index.html">
     <img src = "images/image header/logo need for speed.png" alt = "Logo de Need For Speed" class = "logo">
 </a>
     <nav>
         <ul>
-            <li><a href="/sobre.html">Sobre La Película</a></li>
-            <li><a href="/produccion.html">Producción y Estudio de Grabación</a></li>
-            <li><a href="/curiosidades.html">Curiosidades y Premio</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/reparto.html">Reparto</a></li>
+            <li><a href="sobre.html">Sobre La Película</a></li>
+            <li><a href="produccion.html">Producción y Estudio de Grabación</a></li>
+            <li><a href="curiosidades.html">Curiosidades y Premio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="reparto.html">Reparto</a></li>
         </ul>
        
     </nav>
@@ -32,12 +32,25 @@
 
 
   <h4 class = "contacto-titulo">Contacto y consultas</h4>
-  <p class = "contacto-texto">En esta sección, los usuarios podrán comunicarse para realizar consultas, enviar comentarios o compartir su opinión sobre la película Need for Speed.
+  <p class = "contacto-texto">En esta sección, ¡los usuarios podrán comunicarse para realizar consultas, enviar comentarios o compartir su opinión sobre la película Need for Speed!
+</p>
+<form class="formulario" action="confirmarEnvio.html">
 
-Próximamente se incorporará un formulario de contacto donde se podrán ingresar datos personales y mensajes de manera directa.</p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
+    <label for="numero">Número de teléfono:</label>
+    <input type="tel" id="numero" name="numero" required>
 
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+
+</form>
 <h4 class = "contacto-informacion">Información de contacto</h4>
 <p class = "contacto-texto">Para más información o consultas, puede contactarnos a través de los siguientes medios:</p>
 <ul class = "contacto">

@@ -68,7 +68,7 @@
         0 0 15px #1E3A8A;
 }
 .color-fondo-reparto {
-    background-image: url("../images/image/fondo\ reparto.png");
+    background-color:black;
     background-size: cover;      
     background-position: center; 
     background-repeat: no-repeat;

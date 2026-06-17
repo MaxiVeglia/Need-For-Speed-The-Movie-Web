@@ -2,7 +2,7 @@
 
 
 .fondo_contenido {
-    background-color: white;
+    background-color: black;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -10,7 +10,7 @@
 
 
 .titulo {
-    color: black;
+    color: white;
     font-size: 54px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -18,7 +18,7 @@
 }
 
 .descripcion {
-    color: black;
+    color: white;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;

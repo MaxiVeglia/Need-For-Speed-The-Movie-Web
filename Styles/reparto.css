@@ -3,7 +3,7 @@
 
 
 .fondo-reparto{
-    background-color: rgb(43, 46, 48);
+    background-color: black;
     padding: 20px;
 }
 
@@ -15,10 +15,12 @@
     
 }
 .descripcion-reparto{
-    color:white;
-    font-size: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
-    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .imagen-reparto{

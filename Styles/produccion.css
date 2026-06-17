@@ -12,13 +12,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.texto-descripcion{
-    color:white;
+.texto-descripcion {
+    color: white;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 .imagen-pantalla{
     display: flex;
     justify-content: center;
@@ -39,7 +40,6 @@
     border: none;
 }
 
-/* El tercer video queda solo en la segunda fila y centrado */
 .video-centro {
     flex-basis: 100%;
 }

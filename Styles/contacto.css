@@ -2,6 +2,7 @@
 
 .contacto-fondo{
     background-color:black;
+    padding-top: 50px;
 }
 .contacto-titulo {
     font-size: 30px;
@@ -9,14 +10,15 @@
     font-weight: 700;
     color: white;
     text-align: center;
+    margin-top: -20px;
 }
 
-.contacto-texto{
+.contacto-texto {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: white;
-    text-align:center;
+    text-align: center;
 }
 
 .contacto-informacion{
@@ -57,14 +59,18 @@
     gap: 15px;
     margin: 30px auto;
     padding: 30px;
+
     background-image: url("../images/fondo/auto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-     outline: none;
+    outline: none;
     border-color: #007bff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
 }
-
 .formulario button {
     width: 100%;
     max-width: 400px;

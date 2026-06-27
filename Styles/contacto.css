@@ -66,11 +66,10 @@
     background-repeat: no-repeat;
 
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    outline: none;
-    border-color: #007bff;
+
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
 }
+
 .formulario button {
     width: 100%;
     max-width: 400px;
@@ -103,6 +102,9 @@
     max-width: 400px;
     font-weight: 600;
     text-align: left;
+
+    color: #e1e1e1;
+    text-shadow: 0 0 5px #e1e1e1;
 }
 
 .formulario input,

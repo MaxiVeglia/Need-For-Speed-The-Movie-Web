@@ -1,9 +1,20 @@
-.contacto-fondo{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.contacto-fondo {
     background-color: black;
     padding: 60px 20px;
 }
 
-.mensaje-exito{
+.mensaje-exito {
     max-width: 700px;
     margin: 0 auto;
 
@@ -20,13 +31,13 @@
         0 0 30px rgba(0, 123, 255, 0.15);
 }
 
-.icono-exito{
+.icono-exito {
     font-size: 70px;
     color: #007bff;
     margin-bottom: 20px;
 }
 
-.mensaje-exito h1{
+.mensaje-exito h1 {
     color: white;
 
     font-size: 42px;
@@ -36,7 +47,7 @@
     margin-bottom: 20px;
 }
 
-.mensaje-exito p{
+.mensaje-exito p {
     color: #d9d9d9;
 
     font-size: 20px;
@@ -46,7 +57,7 @@
     margin-bottom: 30px;
 }
 
-.btn-volver{
+.btn-volver {
     background-color: #007bff;
     color: white;
 
@@ -63,11 +74,11 @@
     transition: all 0.3s ease;
 }
 
-.btn-volver:hover{
+.btn-volver:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
 
-.btn-volver:active{
+.btn-volver:active {
     transform: translateY(0);
 }

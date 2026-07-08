@@ -19,6 +19,15 @@ header {
     z-index: 1000;
 }
 
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .header-para-logo {
     display: flex;
     align-items: center;
@@ -233,4 +242,176 @@ footer {
     color: skyblue;
     background: rgba(0,0,0,0.8);
     transform: scale(1.05);
+}
+
+#menu{
+    display:none;
+}
+
+.overlay{
+    display:none;
+}
+
+.cerrar-menu{
+    display:none;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        background-size: cover;
+        background-position: center;        
+    background-image: url("/images/image/Need_For_Speed.jpg");   
+ 
+
+
+    }
+
+    .header-para-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo{
+        height: 60px;
+    }
+
+    .menu-toggle{
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    
+
+    nav{
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        height: 100vh;
+        background: #111;
+        transition: .35s;
+        z-index: 1001;
+        padding-top: 70px;
+    }
+
+    /* Cuando el checkbox está marcado */
+
+    #menu:checked ~ nav{
+        right: 0;
+    }
+
+    /* Fondo oscuro */
+
+    .overlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s;
+        z-index: 1000;
+    }
+
+    #menu:checked ~ .overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Botón cerrar */
+
+    .cerrar-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li{
+        width: 100%;
+    }
+
+    nav a{
+        display: block;
+        color: white;
+        padding: 18px 25px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,.15);
+        text-align: left;
+    }
+
+    nav a:hover{
+        background: white;
+    }
+
+    .logo-centro{
+        width: 90%;
+    }
+
+    .logo-medio-pagina{
+        transform: none;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .titulo{
+        font-size: 32px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+
+    .card{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .card-image{
+        height: 200px;
+    }
+
+    .card-title{
+        font-size: 22px;
+    }
+
+    .card-text{
+        font-size: 18px;
+    }
+
+    .video-fondo{
+        min-height: auto;
+    }
+
+    .video-bg{
+        height: 100%;
+    }
+
+    .trailer-link{
+        position: static;
+        display: inline-block;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
 }

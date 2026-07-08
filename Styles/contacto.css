@@ -21,6 +21,14 @@
     text-align: center;
 }
 
+.contacto-text{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
 .contacto-informacion{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
@@ -120,4 +128,16 @@
     color: #333;
 
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .contacto-imagenes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .contacto-text{
+        font-size: 16px;
+    }
 }

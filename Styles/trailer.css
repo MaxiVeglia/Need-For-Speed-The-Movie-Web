@@ -43,3 +43,9 @@ html, body {
     border-color: skyblue;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .trailer-video {
+        object-fit: cover;
+    }
+}

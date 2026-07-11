@@ -69,3 +69,17 @@ a:hover {
     background: #ff8c00;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+ }

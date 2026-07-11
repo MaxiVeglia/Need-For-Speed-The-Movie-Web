@@ -82,3 +82,22 @@ main {
 .btn-volver:active {
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .mensaje-exito {
+        padding: 30px;
+    }
+
+    .mensaje-exito h1 {
+        font-size: 32px;
+    }
+
+    .mensaje-exito p {
+        font-size: 18px;
+    }
+
+    .btn-volver {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

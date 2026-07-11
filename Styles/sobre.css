@@ -46,9 +46,6 @@ p {
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-.fondodos .fondotres{
-    background-color: black;
-}
 
 .fondouno{
   background-color: black;
@@ -82,4 +79,15 @@ p {
     outline: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .imagenes img {
+        width: 100%;
+        height: auto;
+    }
+.fondouno {
+    background-color: black;
+}
+
 }

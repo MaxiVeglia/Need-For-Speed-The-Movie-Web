@@ -435,6 +435,13 @@ footer {
 }
 
 @media (max-width: 480px) {
+    
+    body{
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+    
     .titulo{
         font-size: 24px;
     }

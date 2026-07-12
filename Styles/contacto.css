@@ -136,7 +136,7 @@
     margin: 10px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .contacto-imagenes{
     display: flex;
     flex-direction: column;
@@ -165,4 +165,12 @@
 
 
 }
-    
+
+@media (max-width: 1024px) {
+    .contacto-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    }
+}

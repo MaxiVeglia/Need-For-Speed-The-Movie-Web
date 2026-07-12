@@ -442,19 +442,16 @@ footer {
    
 
   .logo-medio-pagina{
-    position: relative;
+  background-image: url("../images/image/imagen3333.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 
-    min-height: 100vh;
-
-    background-image: url("../images/image/imagen3333.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
 
 
 .logo-centro{

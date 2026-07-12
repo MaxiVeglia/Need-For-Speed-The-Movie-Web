@@ -89,11 +89,22 @@ p {
 .fondouno {
     background-color: black;
 }
+.h2 {
+    font-size: 28px;
 
+}
+
+.audio-container {
+    border: 2px solid #00cfff;
+}
 }
 
 @media (max-width: 1024px) {
     .imagenes img {
         width: 100%;
         height: auto;
-    }}
+    }
+    .audio-container {
+    border: 2px solid #00cfff;
+}
+}

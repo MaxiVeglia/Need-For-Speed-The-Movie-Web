@@ -112,7 +112,7 @@
         0 0 15px #1E3A8A;
 }
 
-@media (max-width: 768px) {
+@media (max-width:480px) {
     .reparto-container {
         grid-template-columns: 1fr;
     }
@@ -143,3 +143,8 @@
 
 
 }
+
+@media (max-width: 1024px) {
+    .reparto-container {
+        grid-template-columns: 1fr;
+    }}

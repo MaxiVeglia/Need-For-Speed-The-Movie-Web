@@ -81,7 +81,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .imagenes img {
         width: 100%;
         height: auto;
@@ -91,3 +91,9 @@ p {
 }
 
 }
+
+@media (max-width: 1024px) {
+    .imagenes img {
+        width: 100%;
+        height: auto;
+    }}

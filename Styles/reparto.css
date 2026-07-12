@@ -96,7 +96,7 @@
     transition:.3s;
 }
 
-/* Efecto zoom */
+
 .flip-card:hover img{
     transform:scale(1.05);
 }
@@ -123,8 +123,16 @@
     background-position: center; 
     background-repeat: no-repeat;
     padding: 20px;}
-
-
+    
+    .fondo-reparto{
+        background-color: black;
+        padding: 20px;
+    }
+.fondo_nav{
+    display: block;
+    width: 100%;
+    margin-top: -30px;  
+}
 
 
 

@@ -280,12 +280,31 @@ footer {
     }
 
     .menu-toggle{
-        display: block;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-        z-index: 1002;
-    }
+       display:block !important;
+    position:fixed;
+    top:20px;
+    right:20px;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    z-index:1002;
+}
+
+/* X */
+.cerrar-menu{
+    position: absolute;
+    top: 20px;
+    left: 20px;      /* La X queda del lado izquierdo del menú */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mostrar la X cuando el menú está abierto */
+#menu:checked ~ nav .cerrar-menu{
+    display: block;
+}
 
     
 
@@ -301,7 +320,6 @@ footer {
         padding-top: 70px;
     }
 
-    /* Cuando el checkbox está marcado */
 
     #menu:checked ~ nav{
         right: 0;

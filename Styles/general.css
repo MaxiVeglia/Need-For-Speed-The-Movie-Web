@@ -259,14 +259,7 @@ footer {
 
 @media (max-width: 1024px) {
 
-    body{
-        background-size: cover;
-        background-position: center;        
-    background-image: url("/images/image/Need_For_Speed.jpg");   
- 
-
-
-    }
+   
 
     .header-para-logo{
         display: flex;
@@ -463,4 +456,7 @@ footer {
     body{
         background-size: cover;
         background-position: center;
-}}
+}
+.video-bg{
+    height: 100%;
+}} 

@@ -1,176 +1,259 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 
-.contacto-fondo{
-    background-color:black;
-    padding-top: 50px;
-}
-.contacto-titulo {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin-top: -20px;
+
+*{
+    box-sizing:border-box;
 }
 
-.contacto-texto {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: white;
-    text-align: center;
+
+.contacto-fondo{
+
+    background-color:black;
+    padding:50px 5%;
 }
+
+
+.contacto-titulo{
+
+    font-size:30px;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    color:white;
+    text-align:center;
+}
+
+
+.contacto-texto{
+
+    font-size:18px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    text-align:center;
+    line-height:1.5;
+}
+
 
 .contacto-text{
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-      list-style: none;  
-    
+
+    font-size:18px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    text-align:center;
+    list-style:none;
+    padding:0;
+
 }
 
-.contacto-informacion{
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-}
 
+.contacto-informacion,
 .contacto-redes{
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    color: white;
-    text-align: center;
+
+    font-size:24px;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    color:white;
+    text-align:center;
+
 }
 
-.contacto-imagenes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+
+/* NUEVA DISTRIBUCION PARA PC */
+
+.contenedor-contacto{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    max-width:1200px;
+    margin:auto;
+
 }
 
-.contacto-imagenes div {
-    text-align: center;
+
+
+/* FORMULARIO */
+
+
+.formulario{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+
+    padding:30px;
+
+    background-image:url("../images/fondo/auto.jpg");
+    background-size:cover;
+    background-position:center;
+
+    border-radius:15px;
+
 }
 
-.contacto-imagenes img {
-    width: 80px;
+
+.formulario label{
+
+    width:100%;
+    max-width:400px;
+
+    color:black;
+    font-weight:600;
+
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: 30px auto;
-    padding: 30px;
-
-    background-image: url("../images/fondo/auto.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    border-radius: 15px;
-
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
-}
-
-.formulario button {
-    width: 100%;
-    max-width: 400px;
-    padding: 14px;
-
-    border: none;
-    border-radius: 12px;
-
-    background: #007bff;
-    color: white;
-
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-
-.formulario button:hover {
-    background: #0056b3;
-    transform: translateY(-2px);
-}
-
-.formulario button:active {
-    transform: translateY(0);
-}
-
-.formulario label {
-    width: 100%;
-    max-width: 400px;
-    font-weight: 600;
-    text-align: left;
-
-    color: black;
-    text-shadow: 0 0 5px #e1e1e1;
-}
 
 .formulario input,
-.formulario textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px;
+.formulario textarea{
 
-    border: none;
-    border-radius: 12px;
 
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    width:100%;
+    max-width:400px;
 
-    font-size: 14px;
+    padding:12px;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:14px;
+
 }
 
-.contacto{
-    margin: 10px 0;
+
+
+.formulario button{
+
+
+    width:100%;
+    max-width:400px;
+
+    padding:14px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#007bff;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
 
-@media (max-width: 480px) {
-    .contacto-imagenes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+
+
+.formulario button:hover{
+
+    background:#0056b3;
+
 }
+
+
+
+/* REDES */
+
+
+.contacto-imagenes{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+
 
 .contacto-imagenes img{
-    width: 90%;
-    max-width: 250px;
-    height: auto;
-}
 
- .contacto-text{
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
+    width:80px;
+
+    max-width:100%;
+
+    height:auto;
 
 }
+
+
 
 .contacto{
-    display: block;
-    margin: 10px 0;
-} 
+
+    margin:10px 0;
+
+}
+
+
+
+
+
+/* TABLET */
+
+@media(max-width:1024px){
+
+
+.contenedor-contacto{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.contacto-imagenes{
+
+    flex-direction:column;
+
+}
 
 
 }
 
-@media (max-width: 1024px) {
-    .contacto-imagenes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    }
+
+
+
+/* CELULAR */
+
+
+@media(max-width:480px){
+
+
+.contacto-fondo{
+
+    padding:40px 20px;
+
+}
+
+
+.contacto-titulo{
+
+    font-size:25px;
+
+}
+
+
+.contacto-texto{
+
+    font-size:16px;
+
+}
+
+
+
+.contacto-imagenes img{
+
+    width:90%;
+
+    max-width:250px;
+
+}
+
+
+
 }

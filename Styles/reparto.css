@@ -1,150 +1,236 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 
-.fondo-reparto{
-    background-color: black;
-    padding: 20px;
+
+*{
+    box-sizing:border-box;
 }
+
+
+.fondo-reparto{
+
+    background-color:black;
+
+    padding:20px;
+
+}
+
+
 
 .titulo-reparto{
+
     color:white;
-    font-size:20px;
+
+    font-size:35px;
+
+    text-align:center;
+
     font-family:"Montserrat",sans-serif;
+
 }
+
+
 
 .descripcion-reparto{
+
     color:white;
+
     font-size:20px;
+
     text-align:center;
+
     font-family:"Montserrat",sans-serif;
+
     max-width:800px;
+
     margin:0 auto;
+
+    line-height:1.6;
+
 }
 
-.imagen-reparto{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
+
 
 .color-fondo-reparto{
+
     background:black;
+
     padding:20px;
+
 }
+
+
+
 
 .reparto-container{
+
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+
     gap:30px;
+
+
 }
+
+
+
 
 .actor{
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
 }
 
-/* Oculta el checkbox */
+
+
+
 .actor input{
+
     display:none;
+
 }
 
-/* Tarjeta */
+
+
+
+
 .flip-card{
-    width:300px;
-    height:300px;
+
+
+    width:100%;
+
+    max-width:300px;
+
+    aspect-ratio:1/1;
+
     perspective:1000px;
+
     cursor:pointer;
+
+
 }
+
+
 
 .flip-card-inner{
-    position:relative;
+
     width:100%;
+
     height:100%;
-    transition:transform .8s;
+
+    position:relative;
+
+    transition:.8s;
+
     transform-style:preserve-3d;
+
+
 }
 
-/* Gira al hacer click */
+
+
+
 .actor input:checked + .flip-card .flip-card-inner{
+
     transform:rotateY(180deg);
+
 }
 
-/* Dos caras */
+
+
+
 .flip-card-front,
 .flip-card-back{
+
+
     position:absolute;
+
     width:100%;
+
     height:100%;
+
     backface-visibility:hidden;
+
+
 }
+
+
+
 
 .flip-card-back{
+
     transform:rotateY(180deg);
+
 }
 
-/* Imágenes */
+
+
+
+
 .flip-card-front img,
 .flip-card-back img{
-    width:300px;
-    height:300px;
+
+
+    width:100%;
+
+    height:100%;
+
     object-fit:cover;
+
     border-radius:10px;
+
     border:4px solid #D9D9D9;
-    box-shadow:
-        0 0 10px rgba(255,255,255,.4),
-        0 0 20px rgba(192,192,192,.6);
-    transition:.3s;
+
+
 }
 
 
-.flip-card:hover img{
-    transform:scale(1.05);
-}
+
+
 
 .actor h4{
-    margin-top:10px;
+
+
     color:white;
+
     font-family:"Montserrat",sans-serif;
 
-    text-shadow:
-        0 0 5px #1E3A8A,
-        0 0 10px #1E3A8A,
-        0 0 15px #1E3A8A;
+    text-align:center;
+
 }
 
-@media (max-width:480px) {
-    .reparto-container {
-        grid-template-columns: 1fr;
-    }
+
+
+
+@media(max-width:480px){
+
+
+.titulo-reparto{
+
+    font-size:25px;
+
+}
+
+
+.descripcion-reparto{
+
+    font-size:16px;
+
+}
+
 
 .color-fondo-reparto{
-    background-color:black;
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat;
-    padding: 20px;}
-    
-    .fondo-reparto{
-        background-color: black;
-        padding: 20px;
-    }
-.fondo_nav{
-    display: block;
-    width: 100%;
-    margin-top: -30px;  
-}
 
-
-
-
-
-
-
-
+    padding:15px;
 
 }
 
-@media (max-width: 1024px) {
-    .reparto-container {
-        grid-template-columns: 1fr;
-    }}
+
+}

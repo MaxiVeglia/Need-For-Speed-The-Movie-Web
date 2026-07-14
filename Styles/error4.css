@@ -1,262 +1,93 @@
 *{
     box-sizing:border-box;
 }
-
-
-
 body {
-
-
     margin:0;
-
     min-height:100vh;
-
-
     font-family:Arial,sans-serif;
-
     color:white;
-
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-
     text-align:center;
-
-
     background-image:url("../images/image/nfs-background.jpg");
-
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
-
     padding:20px;
-
-
 }
-
-
 
 body::before {
-
-
     content:"";
-
     position:fixed;
-
     inset:0;
-
-
     background:rgba(0,0,0,0.75);
-
-
 }
-
-
 
 .contenedor {
-
-
     position:relative;
-
     z-index:1;
-
-
     width:100%;
-
     max-width:700px;
-
-
     padding:30px;
-
-
 }
-
-
-
-
 
 .contenedor h1 {
-
-
     font-size:clamp(70px,12vw,120px);
-
-
     margin:0;
-
-
     color:#ff6600;
-
-
     text-shadow:0 0 20px #ff6600;
-
-
 }
-
-
-
-
 
 .contenedor h2 {
-
-
     font-size:clamp(25px,5vw,40px);
-
-
     margin-bottom:20px;
-
-
     text-transform:uppercase;
-
-
 }
-
-
-
-
 
 .contenedor p {
-
-
     font-size:20px;
-
-
     line-height:1.6;
-
-
     margin-bottom:30px;
-
-
 }
-
-
-
-
 
 .contenedor a {
-
-
     display:inline-block;
-
-
     padding:14px 30px;
-
-
     background:#ff6600;
-
-
     color:white;
-
-
     text-decoration:none;
-
-
     border-radius:8px;
-
-
     font-weight:bold;
-
-
     transition:.3s;
-
-
 }
-
-
-
-
 
 .contenedor a:hover {
-
-
     background:#ff8c00;
-
-
     transform:scale(1.05);
-
-
 }
-
-
-
-
-
 
 @media(max-width:768px){
-
-
 .contenedor{
-
-
     padding:20px;
-
 }
-
-
 
 .contenedor p{
-
-
     font-size:18px;
-
-
 }
-
-
-
 }
-
-
-
-
-
 
 @media(max-width:480px){
-
-
 .contenedor h1{
-
-
     font-size:80px;
-
-
 }
-
-
-
 .contenedor h2{
-
-
     font-size:25px;
-
-
 }
-
-
-
 .contenedor p{
-
-
     font-size:16px;
-
-
 }
-
-
 .contenedor a{
-
-
     padding:12px 20px;
-
-
 }
-
-
-
 }

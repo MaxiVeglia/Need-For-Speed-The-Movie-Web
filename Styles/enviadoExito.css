@@ -2,260 +2,99 @@
     box-sizing:border-box;
 }
 
-
-
 body {
-
     display:flex;
-
     flex-direction:column;
-
     min-height:100vh;
-
     margin:0;
-
 }
-
-
 
 main {
-
     flex:1;
-
 }
-
-
-
-
 
 .contacto-fondo {
-
     background-color:black;
-
     padding:60px 5%;
-
 }
 
-
-
-
-
 .mensaje-exito {
-
-
     max-width:700px;
-
     width:100%;
-
     margin:0 auto;
-
-
     text-align:center;
-
-
     padding:40px;
-
-
     background:rgba(20,20,20,0.95);
-
-
     border-radius:20px;
-
-
-
     box-shadow:
     0 0 15px rgba(0,123,255,0.30),
     0 0 30px rgba(0,123,255,0.15);
-
-
 }
-
-
-
-
 
 .icono-exito {
-
-
     font-size:70px;
-
     color:#007bff;
-
     margin-bottom:20px;
-
-
 }
-
-
-
-
 
 .mensaje-exito h1 {
-
-
     color:white;
-
-
     font-size:42px;
-
-
     font-family:"Montserrat",sans-serif;
-
-
     margin-bottom:20px;
-
-
 }
-
-
-
-
 
 .mensaje-exito p {
-
-
     color:#d9d9d9;
-
-
     font-size:20px;
-
-
     line-height:1.6;
-
-
     margin-bottom:30px;
-
-
 }
-
-
-
-
 
 .btn-volver {
-
-
     display:inline-block;
-
-
     background-color:#007bff;
-
-
     color:white;
-
-
     padding:14px 28px;
-
-
     border-radius:12px;
-
-
     cursor:pointer;
-
-
     font-size:16px;
-
-
     font-weight:bold;
-
-
     text-decoration:none;
-
-
     transition:.3s;
-
-
 }
-
-
-
-
 .btn-volver:hover {
-
-
     background-color:#0056b3;
-
     transform:translateY(-2px);
-
-
 }
-
-
-
 
 .btn-volver:active {
-
-
     transform:translateY(0);
-
-
 }
-
-
-
-
-
 
 @media(max-width:768px){
-
-
-
 .contacto-fondo{
-
     padding:40px 20px;
-
 }
-
-
 
 .mensaje-exito{
-
-
     padding:30px 20px;
-
-
 }
-
-
 
 .icono-exito{
-
     font-size:55px;
-
 }
-
-
 
 .mensaje-exito h1{
-
-
     font-size:32px;
-
-
 }
-
-
 
 .mensaje-exito p{
-
-
     font-size:18px;
-
-
 }
-
-
 
 .btn-volver{
-
-
     padding:10px 20px;
-
     font-size:14px;
-
-
 }
-
-
-
 }

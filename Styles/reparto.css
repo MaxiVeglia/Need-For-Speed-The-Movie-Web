@@ -5,232 +5,104 @@
     box-sizing:border-box;
 }
 
-
 .fondo-reparto{
-
     background-color:black;
-
     padding:20px;
-
 }
-
-
 
 .titulo-reparto{
-
     color:white;
-
     font-size:35px;
-
     text-align:center;
-
     font-family:"Montserrat",sans-serif;
-
 }
-
-
 
 .descripcion-reparto{
-
     color:white;
-
     font-size:20px;
-
     text-align:center;
-
     font-family:"Montserrat",sans-serif;
-
     max-width:800px;
-
     margin:0 auto;
-
     line-height:1.6;
-
 }
-
-
 
 .color-fondo-reparto{
-
     background:black;
-
     padding:20px;
-
 }
-
-
-
 
 .reparto-container{
-
-
     display:grid;
-
-
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-
     gap:30px;
-
-
 }
-
-
-
 
 .actor{
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
 }
-
-
-
-
 .actor input{
-
     display:none;
-
 }
-
-
-
-
 
 .flip-card{
-
-
     width:100%;
-
     max-width:300px;
-
     aspect-ratio:1/1;
-
     perspective:1000px;
-
     cursor:pointer;
-
-
 }
-
-
 
 .flip-card-inner{
-
     width:100%;
-
     height:100%;
-
     position:relative;
-
     transition:.8s;
-
     transform-style:preserve-3d;
-
-
 }
-
-
-
 
 .actor input:checked + .flip-card .flip-card-inner{
-
     transform:rotateY(180deg);
-
 }
-
-
-
 
 .flip-card-front,
 .flip-card-back{
-
-
     position:absolute;
-
     width:100%;
-
     height:100%;
-
     backface-visibility:hidden;
-
-
 }
-
-
-
 
 .flip-card-back{
-
     transform:rotateY(180deg);
-
 }
-
-
-
-
 
 .flip-card-front img,
 .flip-card-back img{
-
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-
     border-radius:10px;
-
     border:4px solid #D9D9D9;
-
-
 }
-
-
-
-
 
 .actor h4{
-
-
     color:white;
-
     font-family:"Montserrat",sans-serif;
-
     text-align:center;
-
 }
-
-
-
 
 @media(max-width:480px){
-
-
 .titulo-reparto{
-
     font-size:25px;
-
 }
-
-
 .descripcion-reparto{
-
     font-size:16px;
-
 }
-
 
 .color-fondo-reparto{
-
     padding:15px;
-
 }
-
-
 }

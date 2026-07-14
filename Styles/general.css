@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 
-
 body {
     background-image: url("/images/image/Need_For_Speed.jpg"); 
     background-size: contain;  
@@ -9,8 +8,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-        background-color: black;
-
+    background-color: black;
 }
 
 header {
@@ -86,12 +84,10 @@ nav a:hover {
     background-color: black;
 }
 
-
 main {    
     text-align: center;
     margin-top: 0;
 }
-
 
 .titulo {
     font-size: 50px;
@@ -222,20 +218,15 @@ footer {
     position: absolute;
     top: 20px;
     right: 20px;
-
     z-index: 10;
-
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-
     background: rgba(0,0,0,0.6);
     padding: 12px 18px;
     border-radius: 10px;
-
     border: 1px solid rgba(255,255,255,0.4);
-
     transition: all 0.3s ease;
 }
 
@@ -258,9 +249,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-
-   
-
     .header-para-logo{
         display: flex;
         justify-content: space-between;
@@ -283,24 +271,20 @@ footer {
     z-index:1002;
 }
 
-/* X */
 .cerrar-menu{
     position: absolute;
     top: 20px;
-    left: 20px;      /* La X queda del lado izquierdo del menú */
+    left: 20px;      
     font-size: 30px;
     color: white;
     cursor: pointer;
     display: none;
 }
 
-/* Mostrar la X cuando el menú está abierto */
+
 #menu:checked ~ nav .cerrar-menu{
     display: block;
 }
-
-    
-
     nav{
         position: fixed;
         top: 0;
@@ -318,7 +302,6 @@ footer {
         right: 0;
     }
 
-    /* Fondo oscuro */
 
     .overlay{
         position: fixed;
@@ -438,9 +421,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    
-   
-
   .logo-medio-pagina{
   background-image: url("../images/image/imagen3333.jpeg");
 background-repeat: no-repeat;
@@ -451,22 +431,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-
-
-
 .logo-centro{
     width: 90%;
     max-width: 320px;
     z-index: 2;
 }
-
-
 body{
     background:black;
 }
-
-    
-    
     .titulo{
         font-size: 24px;
     }
@@ -498,5 +470,4 @@ body{
 .video-bg{
     height: 100%;
 }
-
 } 
